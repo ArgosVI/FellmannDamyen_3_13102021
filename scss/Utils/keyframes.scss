@@ -1,0 +1,198 @@
+@keyframes loaderanimation {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+@keyframes loaderdisapear {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes loaderfadeout {
+  0% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes body {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes slide1 {
+  0% {
+    opacity: 0;
+    top: 20px;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    opacity: 0;
+    top: 60%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    top: 50%;
+  }
+}
+
+@keyframes slide3 {
+  0% {
+    opacity: 0;
+    bottom: -20px;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+@keyframes slideaux1 {
+  0% {
+    opacity: 0;
+    top: 20px;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes slideaux2 {
+  0% {
+    opacity: 0;
+    top: 36%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    top: 26%;
+  }
+}
+
+@keyframes slideaux3 {
+  0% {
+    opacity: 0;
+    bottom: 16%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    bottom: 26%;
+  }
+}
+
+@keyframes slideaux4 {
+  0% {
+    opacity: 0;
+    bottom: -20px;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shortertitles {
+  0% {
+    width: 70%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes longertitles {
+  0% {
+    width: 60%;
+  }
+  100% {
+    width: 70%;
+  }
+}

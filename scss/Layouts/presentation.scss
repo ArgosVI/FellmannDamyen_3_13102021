@@ -1,0 +1,49 @@
+@import "../utils/keyframes.scss";
+@import "../utils/variables.scss";
+@import "../Utils/mixin.scss";
+
+.Emplacement {
+  height: 50px;
+  background-color: #eaeaea;
+  text-align: center;
+  color: #484848;
+  @include FlexAlign();
+  .fa-map-marker-alt {
+    font-size: 20px;
+    padding-right: 20px;
+  }
+  .EmplacementTexte {
+    font-weight: 700;
+  }
+}
+
+.Presentation {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  @include FlexAlign();
+  flex-direction: column;
+  text-align: center;
+  background-color: $gris;
+  &TexteUn {
+    font-weight: 900;
+    font-size: 1.4rem;
+    width: 70%;
+  }
+  &TexteDeux {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: 300;
+    width: 90%;
+  }
+  &Bouton {
+    @include Bouton;
+    &:hover {
+      background: linear-gradient(
+        180deg,
+        lighten($secondaire, 5%) 0%,
+        lighten($primaire, 5%) 100%
+      );
+      box-shadow: 0px 1px 10px 1px rgb(179, 179, 179);
+    }
+  }
+}

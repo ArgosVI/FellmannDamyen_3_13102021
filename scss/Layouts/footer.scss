@@ -1,0 +1,38 @@
+.Footer {
+  height: 260px;
+  color: white;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  &Image {
+    filter: invert(100%);
+    width: 40%;
+    max-width: 200px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    @media (min-width: 760px) {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  &TexteDiv {
+    padding-top: 10px;
+    @media (min-width: 760px) {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+  &Texte {
+    padding-top: 10px;
+    display: inline;
+    @media (min-width: 760px) {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+  &fas {
+    padding-right: 5px;
+  }
+}

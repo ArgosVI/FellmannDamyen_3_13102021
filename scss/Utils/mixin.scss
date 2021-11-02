@@ -1,0 +1,90 @@
+@mixin FlexAlign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin Bouton {
+  color: white;
+  border: none;
+  padding: 15px 0;
+  width: 200px;
+  border-radius: 50px;
+  background: linear-gradient(180deg, $secondaire 0%, $primaire 100%);
+  font-size: 0.95rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+@mixin media760 {
+  @media (min-width: 760px) {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@mixin AnimationMenus($name, $delay) {
+  animation-name: $name;
+  animation-delay: $delay;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@mixin background($ltr-value) {
+  background-image: url($ltr-value);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+  width: 100%;
+}
+
+@mixin check {
+  &:hover > .CheckShape {
+    width: 60px;
+    background-color: $terciaire;
+  }
+  &:hover .fa-check-circle {
+    animation-name: rotation;
+    animation-duration: 500ms;
+  }
+}
+
+@mixin dish {
+  position: absolute;
+  width: 95%;
+  height: 70px;
+  box-shadow: 0px 5px 20px 1px lightgray;
+  border-radius: 15px;
+  opacity: 0;
+}
+
+@mixin shortertitles {
+  &:hover .DishTitle {
+    animation-name: shortertitles;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  &:hover .DishDescription {
+    animation-name: shortertitles;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}
+
+@mixin shortertitlesaux {
+  &:hover .DishAuxTitleAux {
+    animation-name: shortertitles;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  &:hover .DishAuxDescriptionAux {
+    animation-name: shortertitles;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}

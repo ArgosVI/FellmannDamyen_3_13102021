@@ -1,0 +1,293 @@
+@import "../utils/keyframes.scss";
+@import "../utils/variables.scss";
+@import "../Utils/mixin.scss";
+
+.EnTete {
+  border-radius: 50px;
+  background-color: white;
+  height: 100px;
+  margin-top: -45px;
+  @include media760;
+  &Restaurant {
+    padding-top: 28px;
+    align-items: center;
+    margin-left: 15px;
+    font-family: "Shrikhand", cursive;
+    font-size: 1.6rem;
+    display: inline-block;
+  }
+  .far {
+    margin-top: 30px;
+    margin-right: 30px;
+    float: right;
+    font-size: 1.6rem;
+    &:hover {
+      animation-fill-mode: forwards;
+      animation-duration: 0.1s;
+      animation-name: fadeout;
+    }
+  }
+  .fas {
+    margin-top: 30px;
+    margin-right: -26px;
+    float: right;
+    font-size: 1.6rem;
+    opacity: 0;
+    color: $primaire;
+    &:hover {
+      animation-fill-mode: forwards;
+      animation-duration: 0.1s;
+      animation-name: fadein;
+    }
+  }
+}
+
+.Intitule {
+  text-transform: uppercase;
+  margin-left: 15px;
+  padding-bottom: 15px;
+  @media (min-width: 760px) {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  &Texte {
+    font-weight: 300;
+    padding-bottom: 5px;
+  }
+  &Ligne {
+    width: 50px;
+    height: 3px;
+    background-color: $terciaire;
+  }
+}
+
+.Dish {
+  height: 250px;
+  position: relative;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-left: 5%;
+  @include media760;
+  &Div1 {
+    top: 0;
+    @include dish;
+    @include check;
+    @include shortertitles;
+  }
+  &Div2 {
+    top: 50%;
+    transform: translate(0, -50%);
+    @include dish;
+    @include check;
+    @include shortertitles;
+  }
+  &Div3 {
+    bottom: 0;
+    @include dish;
+    @include check;
+    @include shortertitles;
+  }
+  &Title {
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: fit-content;
+    width: 60%;
+    display: inline-block;
+    animation-name: longertitles;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  &Description {
+    padding-left: 15px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: fit-content;
+    width: 60%;
+    display: inline-block;
+    animation-name: longertitles;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  &Price {
+    float: right;
+    font-weight: 600;
+    height: 100%;
+    margin-bottom: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.DishAux {
+  height: 333px;
+  margin-bottom: 30px;
+  position: relative;
+  margin-left: 15px;
+  @include media760;
+  &DivAux1 {
+    top: 0;
+    @include dish;
+    @include check;
+    @include shortertitlesaux;
+  }
+  &DivAux2 {
+    top: 26%;
+    @include dish;
+    @include check;
+    @include shortertitlesaux;
+  }
+  &DivAux3 {
+    bottom: 26%;
+    @include dish;
+    @include check;
+    @include shortertitlesaux;
+  }
+  &DivAux4 {
+    bottom: 0;
+    @include dish;
+    @include check;
+    @include shortertitlesaux;
+  }
+  &TitleAux {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: fit-content;
+    width: 60%;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    animation-name: longertitles;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  &DescriptionAux {
+    padding-left: 15px;
+    font-size: 0.9rem;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: fit-content;
+    width: 60%;
+    animation-name: longertitles;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  &PriceAux {
+    float: right;
+    font-weight: 600;
+    padding-right: 15px;
+  }
+}
+
+.CheckShape {
+  float: right;
+  height: 100%;
+  width: 0px;
+  background-color: $terciaire;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+
+.fa-check-circle {
+  @include FlexAlign;
+  color: white;
+  font-size: 1.5rem;
+  height: 100%;
+}
+
+.Entrees {
+  .DishDiv {
+    &1 {
+      @include AnimationMenus(slide1, 500ms);
+    }
+    &2 {
+      @include AnimationMenus(slide2, 700ms);
+    }
+    &3 {
+      @include AnimationMenus(slide3, 900ms);
+    }
+  }
+  .DishAuxDivAux {
+    &1 {
+      @include AnimationMenus(slideaux1, 300ms);
+    }
+    &2 {
+      @include AnimationMenus(slideaux2, 500ms);
+    }
+    &3 {
+      @include AnimationMenus(slideaux3, 700ms);
+    }
+    &4 {
+      @include AnimationMenus(slideaux4, 900ms);
+    }
+  }
+}
+
+.Plats {
+  .DishDiv {
+    &1 {
+      @include AnimationMenus(slide1, 700ms);
+    }
+    &2 {
+      @include AnimationMenus(slide2, 900ms);
+    }
+    &3 {
+      @include AnimationMenus(slide3, 1100ms);
+    }
+  }
+}
+
+.Desserts {
+  .DishDiv {
+    &1 {
+      @include AnimationMenus(slide1, 900ms);
+    }
+    &2 {
+      @include AnimationMenus(slide2, 1100ms);
+    }
+    &3 {
+      @include AnimationMenus(slide3, 1300ms);
+    }
+  }
+}
+
+.Commander {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 70px;
+  @media (min-width: 760px) {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  &Bouton {
+    @include Bouton;
+    &:hover {
+      background: linear-gradient(
+        180deg,
+        lighten($secondaire, 5%) 0%,
+        lighten($primaire, 5%) 100%
+      );
+      box-shadow: 0px 1px 10px 1px rgb(179, 179, 179);
+    }
+  }
+}

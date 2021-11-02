@@ -1,0 +1,23 @@
+.Loader {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  height: 100vh;
+  background: linear-gradient(180deg, $secondaire 0%, $primaire 100%);
+  position: fixed;
+  animation: loaderfadeout 3s, loaderdisapear 3s;
+  animation-fill-mode: forwards;
+  &Img {
+    width: 50%;
+    object-fit: contain;
+    filter: invert(100%);
+    animation-duration: 1s;
+    animation-name: loaderanimation;
+    animation-iteration-count: infinite;
+  }
+}
+
+.BodyDiv {
+  animation-duration: 3s;
+  animation-name: body;
+}
