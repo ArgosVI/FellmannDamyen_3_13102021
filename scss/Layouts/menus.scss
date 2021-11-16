@@ -1,18 +1,18 @@
 @import "../utils/keyframes.scss";
 @import "../utils/variables.scss";
-@import "../Utils/mixin.scss";
+@import "../utils/mixin.scss";
 
-.EnTete {
+.entete {
   border-radius: 50px;
   background-color: white;
   height: 100px;
   margin-top: -45px;
   @include media760;
-  &Restaurant {
+  &restaurant {
     padding-top: 28px;
     align-items: center;
     margin-left: 15px;
-    font-family: "Shrikhand", cursive;
+    font-family: "shrikhand", cursive;
     font-size: 1.6rem;
     display: inline-block;
   }
@@ -42,7 +42,7 @@
   }
 }
 
-.Intitule {
+.intitule {
   text-transform: uppercase;
   margin-left: 15px;
   padding-bottom: 15px;
@@ -51,44 +51,44 @@
     margin: 0 auto;
     padding-top: 20px;
   }
-  &Texte {
+  &texte {
     font-weight: 300;
     padding-bottom: 5px;
   }
-  &Ligne {
+  &ligne {
     width: 50px;
     height: 3px;
     background-color: $terciaire;
   }
 }
 
-.Dish {
+.dish {
   height: 250px;
   position: relative;
   justify-content: space-between;
   margin-bottom: 30px;
   margin-left: 5%;
   @include media760;
-  &Div1 {
+  &div1 {
     top: 0;
     @include dish;
     @include check;
     @include shortertitles;
   }
-  &Div2 {
+  &div2 {
     top: 50%;
     transform: translate(0, -50%);
     @include dish;
     @include check;
     @include shortertitles;
   }
-  &Div3 {
+  &div3 {
     bottom: 0;
     @include dish;
     @include check;
     @include shortertitles;
   }
-  &Title {
+  &title {
     padding-top: 15px;
     padding-left: 15px;
     font-size: 1.1rem;
@@ -104,7 +104,7 @@
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
   }
-  &Description {
+  &description {
     padding-left: 15px;
     font-size: 0.9rem;
     white-space: nowrap;
@@ -118,7 +118,7 @@
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
   }
-  &Price {
+  &price {
     float: right;
     font-weight: 600;
     height: 100%;
@@ -128,37 +128,37 @@
   }
 }
 
-.DishAux {
+.dishaux {
   height: 333px;
   margin-bottom: 30px;
   position: relative;
   margin-left: 15px;
   @include media760;
-  &DivAux1 {
+  &divaux1 {
     top: 0;
     @include dish;
     @include check;
     @include shortertitlesaux;
   }
-  &DivAux2 {
+  &divaux2 {
     top: 26%;
     @include dish;
     @include check;
     @include shortertitlesaux;
   }
-  &DivAux3 {
+  &divaux3 {
     bottom: 26%;
     @include dish;
     @include check;
     @include shortertitlesaux;
   }
-  &DivAux4 {
+  &divaux4 {
     bottom: 0;
     @include dish;
     @include check;
     @include shortertitlesaux;
   }
-  &TitleAux {
+  &titleaux {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -173,7 +173,7 @@
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
   }
-  &DescriptionAux {
+  &descriptionaux {
     padding-left: 15px;
     font-size: 0.9rem;
     display: inline-block;
@@ -187,14 +187,14 @@
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
   }
-  &PriceAux {
+  &priceaux {
     float: right;
     font-weight: 600;
     padding-right: 15px;
   }
 }
 
-.CheckShape {
+.checkshape {
   float: right;
   height: 100%;
   width: 0px;
@@ -208,69 +208,69 @@
 }
 
 .fa-check-circle {
-  @include FlexAlign;
+  @include flexalign;
   color: white;
   font-size: 1.5rem;
   height: 100%;
 }
 
-.Entrees {
-  .DishDiv {
+.entrees {
+  .dishdiv {
     &1 {
-      @include AnimationMenus(slide1, 500ms);
+      @include animationmenus(slide1, 500ms);
     }
     &2 {
-      @include AnimationMenus(slide2, 700ms);
+      @include animationmenus(slide2, 700ms);
     }
     &3 {
-      @include AnimationMenus(slide3, 900ms);
+      @include animationmenus(slide3, 900ms);
     }
   }
-  .DishAuxDivAux {
+  .dishauxdivaux {
     &1 {
-      @include AnimationMenus(slideaux1, 300ms);
+      @include animationmenus(slideaux1, 300ms);
     }
     &2 {
-      @include AnimationMenus(slideaux2, 500ms);
+      @include animationmenus(slideaux2, 500ms);
     }
     &3 {
-      @include AnimationMenus(slideaux3, 700ms);
+      @include animationmenus(slideaux3, 700ms);
     }
     &4 {
-      @include AnimationMenus(slideaux4, 900ms);
+      @include animationmenus(slideaux4, 900ms);
     }
   }
 }
 
-.Plats {
-  .DishDiv {
+.plats {
+  .dishdiv {
     &1 {
-      @include AnimationMenus(slide1, 700ms);
+      @include animationmenus(slide1, 700ms);
     }
     &2 {
-      @include AnimationMenus(slide2, 900ms);
+      @include animationmenus(slide2, 900ms);
     }
     &3 {
-      @include AnimationMenus(slide3, 1100ms);
+      @include animationmenus(slide3, 1100ms);
     }
   }
 }
 
-.Desserts {
-  .DishDiv {
+.desserts {
+  .dishdiv {
     &1 {
-      @include AnimationMenus(slide1, 900ms);
+      @include animationmenus(slide1, 900ms);
     }
     &2 {
-      @include AnimationMenus(slide2, 1100ms);
+      @include animationmenus(slide2, 1100ms);
     }
     &3 {
-      @include AnimationMenus(slide3, 1300ms);
+      @include animationmenus(slide3, 1300ms);
     }
   }
 }
 
-.Commander {
+.commander {
   display: flex;
   justify-content: center;
   padding-bottom: 70px;
@@ -279,8 +279,8 @@
     margin: 0 auto;
     padding-top: 20px;
   }
-  &Bouton {
-    @include Bouton;
+  &bouton {
+    @include bouton;
     &:hover {
       background: linear-gradient(
         180deg,

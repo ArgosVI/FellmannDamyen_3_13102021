@@ -1,10 +1,10 @@
-@mixin FlexAlign {
+@mixin flexalign {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin Bouton {
+@mixin bouton {
   color: white;
   border: none;
   padding: 15px 0;
@@ -23,7 +23,7 @@
   }
 }
 
-@mixin AnimationMenus($name, $delay) {
+@mixin animationmenus($name, $delay) {
   animation-name: $name;
   animation-delay: $delay;
   animation-duration: 1s;
@@ -40,7 +40,7 @@
 }
 
 @mixin check {
-  &:hover > .CheckShape {
+  &:hover > .checkshape {
     width: 60px;
     background-color: $terciaire;
   }
@@ -60,13 +60,13 @@
 }
 
 @mixin shortertitles {
-  &:hover .DishTitle {
+  &:hover .dishtitle {
     animation-name: shortertitles;
     animation-duration: 200ms;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
   }
-  &:hover .DishDescription {
+  &:hover .dishdescription {
     animation-name: shortertitles;
     animation-duration: 200ms;
     animation-timing-function: ease-in-out;
@@ -75,13 +75,13 @@
 }
 
 @mixin shortertitlesaux {
-  &:hover .DishAuxTitleAux {
+  &:hover .dishauxtitleaux {
     animation-name: shortertitles;
     animation-duration: 200ms;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
   }
-  &:hover .DishAuxDescriptionAux {
+  &:hover .dishauxdescriptionaux {
     animation-name: shortertitles;
     animation-duration: 200ms;
     animation-timing-function: ease-in-out;

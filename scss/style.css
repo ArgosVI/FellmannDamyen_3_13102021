@@ -410,7 +410,7 @@
 
 * {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "roboto", sans-serif;
   font-size: 1rem;
 }
 
@@ -420,7 +420,16 @@ a {
   cursor: pointer;
 }
 
-.DivLogo {
+form {
+  color: inherit;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.divlogo {
   height: 80px;
   position: relative;
   -webkit-box-shadow: 0px 5px 5px 1px lightgray;
@@ -436,7 +445,7 @@ a {
           align-items: center;
 }
 
-.DivLogo .fas {
+.divlogo .fas {
   position: absolute;
   float: left;
   left: 20px;
@@ -444,7 +453,7 @@ a {
   font-size: 1.2rem;
 }
 
-.Footer {
+.footer {
   height: 260px;
   color: white;
   background-color: #353535;
@@ -458,7 +467,7 @@ a {
   padding-left: 30px;
 }
 
-.FooterImage {
+.footerimage {
   -webkit-filter: invert(100%);
           filter: invert(100%);
   width: 40%;
@@ -468,40 +477,40 @@ a {
 }
 
 @media (min-width: 760px) {
-  .FooterImage {
+  .footerimage {
     width: 50%;
     margin: 0 auto;
   }
 }
 
-.FooterTexteDiv {
+.footertextediv {
   padding-top: 10px;
 }
 
 @media (min-width: 760px) {
-  .FooterTexteDiv {
+  .footertextediv {
     width: 50%;
     margin: 0 auto;
   }
 }
 
-.FooterTexte {
+.footertexte {
   padding-top: 10px;
   display: inline;
 }
 
 @media (min-width: 760px) {
-  .FooterTexte {
+  .footertexte {
     width: 50%;
     margin: 0 auto;
   }
 }
 
-.Footerfas {
+.footerfas {
   padding-right: 5px;
 }
 
-.Loader {
+.loader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -519,7 +528,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.LoaderImg {
+.loaderimg {
   width: 50%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -533,7 +542,7 @@ a {
           animation-iteration-count: infinite;
 }
 
-.BodyDiv {
+.bodydiv {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-name: body;
@@ -745,7 +754,7 @@ a {
   }
 }
 
-.Emplacement {
+.emplacement {
   height: 50px;
   background-color: #eaeaea;
   text-align: center;
@@ -761,16 +770,16 @@ a {
           align-items: center;
 }
 
-.Emplacement .fa-map-marker-alt {
+.emplacement .fa-map-marker-alt {
   font-size: 20px;
   padding-right: 20px;
 }
 
-.Emplacement .EmplacementTexte {
+.emplacement .emplacementtexte {
   font-weight: 700;
 }
 
-.Presentation {
+.presentation {
   padding-top: 40px;
   padding-bottom: 100px;
   display: -webkit-box;
@@ -790,20 +799,20 @@ a {
   background-color: #f6f6f6;
 }
 
-.PresentationTexteUn {
+.presentationtexteun {
   font-weight: 900;
   font-size: 1.4rem;
   width: 70%;
 }
 
-.PresentationTexteDeux {
+.presentationtextedeux {
   padding-top: 10px;
   padding-bottom: 20px;
   font-weight: 300;
   width: 90%;
 }
 
-.PresentationBouton {
+.presentationbouton {
   color: white;
   border: none;
   padding: 15px 0;
@@ -816,7 +825,7 @@ a {
   cursor: pointer;
 }
 
-.PresentationBouton:hover {
+.presentationbouton:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), to(#a16be0));
   background: linear-gradient(180deg, #ff93e1 0%, #a16be0 100%);
   -webkit-box-shadow: 0px 1px 10px 1px #b3b3b3;
@@ -1028,7 +1037,7 @@ a {
   }
 }
 
-.Bouton {
+.bouton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1040,7 +1049,7 @@ a {
   padding-bottom: 35px;
 }
 
-.BoutonTexteFonctionnement {
+.boutontextefonctionnement {
   font-size: 1.3rem;
   font-weight: 700;
   padding-bottom: 25px;
@@ -1048,13 +1057,13 @@ a {
 }
 
 @media (min-width: 760px) {
-  .BoutonTexteFonctionnement {
+  .boutontextefonctionnement {
     width: 60%;
     margin: auto;
   }
 }
 
-.Bouton .Boutons {
+.bouton .boutons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1072,7 +1081,7 @@ a {
   gap: 10px;
 }
 
-.Bouton .BoutonsDiv {
+.bouton .boutonsdiv {
   -webkit-box-shadow: 0px 5px 10px 1px #ebebeb;
           box-shadow: 0px 5px 10px 1px #ebebeb;
   border-radius: 15px;
@@ -1081,13 +1090,13 @@ a {
 }
 
 @media (min-width: 760px) {
-  .Bouton .BoutonsDiv {
+  .bouton .boutonsdiv {
     width: 50%;
     margin: auto;
   }
 }
 
-.Bouton .Numeros {
+.bouton .numeros {
   color: white;
   width: 15px;
   height: 15px;
@@ -1098,13 +1107,13 @@ a {
   margin: -15px;
 }
 
-.Bouton .fas {
+.bouton .fas {
   padding: 0px 20px 0px 30px;
   font-size: 1.2rem;
   color: grey;
 }
 
-.Bouton .Textes {
+.bouton .textes {
   text-align: start;
   font-weight: 500;
 }
@@ -1314,7 +1323,7 @@ a {
   }
 }
 
-.Restaurants {
+.restaurants {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1328,20 +1337,20 @@ a {
   background-color: #f6f6f6;
 }
 
-.RestaurantsTexteRestaurants {
+.restaurantstexterestaurants {
   font-size: 1.3rem;
   font-weight: 700;
   padding-bottom: 30px;
 }
 
 @media (min-width: 760px) {
-  .RestaurantsTexteRestaurants {
+  .restaurantstexterestaurants {
     width: 60%;
     margin: auto;
   }
 }
 
-.RestaurantsDiv {
+.restaurantsdiv {
   -webkit-box-shadow: 0px 5px 20px 1px lightgray;
           box-shadow: 0px 5px 20px 1px lightgray;
   width: 90%;
@@ -1353,16 +1362,17 @@ a {
   text-decoration: none;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 
 @media (min-width: 760px) {
-  .RestaurantsDiv {
+  .restaurantsdiv {
     width: 50%;
     margin: 10px auto;
   }
 }
 
-.RestaurantsImage {
+.restaurantsimage {
   position: absolute;
   top: 0;
   left: 0;
@@ -1374,7 +1384,7 @@ a {
   border-top-right-radius: 20px;
 }
 
-.RestaurantsNouveau {
+.restaurantsnouveau {
   font-weight: 700;
   color: #008766;
   position: absolute;
@@ -1386,26 +1396,28 @@ a {
   border-color: #99e2d0;
 }
 
-.Restaurants .Nouveau3,
-.Restaurants .Nouveau4 {
+.restaurants .nouveau3,
+.restaurants .nouveau4 {
   visibility: hidden;
 }
 
-.RestaurantsGroupeTextes {
+.restaurantsgroupetextes {
   width: 50%;
   padding-top: 10px;
   padding-left: 10px;
   text-align: left;
   position: absolute;
   bottom: 15px;
+  left: 0;
 }
 
-.RestaurantsNom {
+.restaurantsnom {
   font-size: 1.1rem;
   font-weight: 700;
+  display: block;
 }
 
-.Restaurants .fas {
+.restaurants .fas {
   font-size: 1.5rem;
   position: absolute;
   bottom: 25px;
@@ -1414,7 +1426,7 @@ a {
   color: #9356dc;
 }
 
-.Restaurants .fas:hover {
+.restaurants .fas:hover {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-duration: 0.1s;
@@ -1423,14 +1435,14 @@ a {
           animation-name: fadein;
 }
 
-.Restaurants .far {
+.restaurants .far {
   font-size: 1.5rem;
   position: absolute;
   bottom: 25px;
   right: 25px;
 }
 
-.Restaurants .far:hover {
+.restaurants .far:hover {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-duration: 0.1s;
@@ -1644,7 +1656,7 @@ a {
   }
 }
 
-.ImageBackground1 {
+.imagebackground1 {
   background-image: url("../Maquettes_Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1652,7 +1664,7 @@ a {
   width: 100%;
 }
 
-.ImageBackground2 {
+.imagebackground2 {
   background-image: url("../Maquettes_Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1660,7 +1672,7 @@ a {
   width: 100%;
 }
 
-.ImageBackground3 {
+.imagebackground3 {
   background-image: url("../Maquettes_Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1668,7 +1680,7 @@ a {
   width: 100%;
 }
 
-.ImageBackground4 {
+.imagebackground4 {
   background-image: url("../Maquettes_Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1881,7 +1893,7 @@ a {
   }
 }
 
-.EnTete {
+.entete {
   border-radius: 50px;
   background-color: white;
   height: 100px;
@@ -1889,31 +1901,31 @@ a {
 }
 
 @media (min-width: 760px) {
-  .EnTete {
+  .entete {
     width: 50%;
     margin: 0 auto;
   }
 }
 
-.EnTeteRestaurant {
+.enteterestaurant {
   padding-top: 28px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-left: 15px;
-  font-family: "Shrikhand", cursive;
+  font-family: "shrikhand", cursive;
   font-size: 1.6rem;
   display: inline-block;
 }
 
-.EnTete .far {
+.entete .far {
   margin-top: 30px;
   margin-right: 30px;
   float: right;
   font-size: 1.6rem;
 }
 
-.EnTete .far:hover {
+.entete .far:hover {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-duration: 0.1s;
@@ -1922,7 +1934,7 @@ a {
           animation-name: fadeout;
 }
 
-.EnTete .fas {
+.entete .fas {
   margin-top: 30px;
   margin-right: -26px;
   float: right;
@@ -1931,7 +1943,7 @@ a {
   color: #9356dc;
 }
 
-.EnTete .fas:hover {
+.entete .fas:hover {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-duration: 0.1s;
@@ -1940,32 +1952,32 @@ a {
           animation-name: fadein;
 }
 
-.Intitule {
+.intitule {
   text-transform: uppercase;
   margin-left: 15px;
   padding-bottom: 15px;
 }
 
 @media (min-width: 760px) {
-  .Intitule {
+  .intitule {
     width: 50%;
     margin: 0 auto;
     padding-top: 20px;
   }
 }
 
-.IntituleTexte {
+.intituletexte {
   font-weight: 300;
   padding-bottom: 5px;
 }
 
-.IntituleLigne {
+.intituleligne {
   width: 50px;
   height: 3px;
   background-color: #99e2d0;
 }
 
-.Dish {
+.dish {
   height: 250px;
   position: relative;
   -webkit-box-pack: justify;
@@ -1976,13 +1988,13 @@ a {
 }
 
 @media (min-width: 760px) {
-  .Dish {
+  .dish {
     width: 50%;
     margin: 0 auto;
   }
 }
 
-.DishDiv1 {
+.dishdiv1 {
   top: 0;
   position: absolute;
   width: 95%;
@@ -1993,19 +2005,19 @@ a {
   opacity: 0;
 }
 
-.DishDiv1:hover > .CheckShape {
+.dishdiv1:hover > .checkshape {
   width: 60px;
   background-color: #99e2d0;
 }
 
-.DishDiv1:hover .fa-check-circle {
+.dishdiv1:hover .fa-check-circle {
   -webkit-animation-name: rotation;
           animation-name: rotation;
   -webkit-animation-duration: 500ms;
           animation-duration: 500ms;
 }
 
-.DishDiv1:hover .DishTitle {
+.dishdiv1:hover .dishtitle {
   -webkit-animation-name: shortertitles;
           animation-name: shortertitles;
   -webkit-animation-duration: 200ms;
@@ -2016,7 +2028,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.DishDiv1:hover .DishDescription {
+.dishdiv1:hover .dishdescription {
   -webkit-animation-name: shortertitles;
           animation-name: shortertitles;
   -webkit-animation-duration: 200ms;
@@ -2027,7 +2039,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.DishDiv2 {
+.dishdiv2 {
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -2040,19 +2052,19 @@ a {
   opacity: 0;
 }
 
-.DishDiv2:hover > .CheckShape {
+.dishdiv2:hover > .checkshape {
   width: 60px;
   background-color: #99e2d0;
 }
 
-.DishDiv2:hover .fa-check-circle {
+.dishdiv2:hover .fa-check-circle {
   -webkit-animation-name: rotation;
           animation-name: rotation;
   -webkit-animation-duration: 500ms;
           animation-duration: 500ms;
 }
 
-.DishDiv2:hover .DishTitle {
+.dishdiv2:hover .dishtitle {
   -webkit-animation-name: shortertitles;
           animation-name: shortertitles;
   -webkit-animation-duration: 200ms;
@@ -2063,7 +2075,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.DishDiv2:hover .DishDescription {
+.dishdiv2:hover .dishdescription {
   -webkit-animation-name: shortertitles;
           animation-name: shortertitles;
   -webkit-animation-duration: 200ms;
@@ -2074,7 +2086,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.DishDiv3 {
+.dishdiv3 {
   bottom: 0;
   position: absolute;
   width: 95%;
@@ -2085,19 +2097,19 @@ a {
   opacity: 0;
 }
 
-.DishDiv3:hover > .CheckShape {
+.dishdiv3:hover > .checkshape {
   width: 60px;
   background-color: #99e2d0;
 }
 
-.DishDiv3:hover .fa-check-circle {
+.dishdiv3:hover .fa-check-circle {
   -webkit-animation-name: rotation;
           animation-name: rotation;
   -webkit-animation-duration: 500ms;
           animation-duration: 500ms;
 }
 
-.DishDiv3:hover .DishTitle {
+.dishdiv3:hover .dishtitle {
   -webkit-animation-name: shortertitles;
           animation-name: shortertitles;
   -webkit-animation-duration: 200ms;
@@ -2108,7 +2120,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.DishDiv3:hover .DishDescription {
+.dishdiv3:hover .dishdescription {
   -webkit-animation-name: shortertitles;
           animation-name: shortertitles;
   -webkit-animation-duration: 200ms;
@@ -2119,7 +2131,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.DishTitle {
+.dishtitle {
   padding-top: 15px;
   padding-left: 15px;
   font-size: 1.1rem;
@@ -2142,7 +2154,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.DishDescription {
+.dishdescription {
   padding-left: 15px;
   font-size: 0.9rem;
   white-space: nowrap;
@@ -2163,7 +2175,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.DishPrice {
+.dishprice {
   float: right;
   font-weight: 600;
   height: 100%;
@@ -2172,7 +2184,7 @@ a {
   padding-right: 15px;
 }
 
-.DishAux {
+.dishaux {
   height: 333px;
   margin-bottom: 30px;
   position: relative;
@@ -2180,13 +2192,13 @@ a {
 }
 
 @media (min-width: 760px) {
-  .DishAux {
+  .dishaux {
     width: 50%;
     margin: 0 auto;
   }
 }
 
-.DishAuxDivAux1 {
+.dishauxdivaux1 {
   top: 0;
   position: absolute;
   width: 95%;
@@ -2197,19 +2209,19 @@ a {
   opacity: 0;
 }
 
-.DishAuxDivAux1:hover > .CheckShape {
+.dishauxdivaux1:hover > .checkshape {
   width: 60px;
   background-color: #99e2d0;
 }
 
-.DishAuxDivAux1:hover .fa-check-circle {
+.dishauxdivaux1:hover .fa-check-circle {
   -webkit-animation-name: rotation;
           animation-name: rotation;
   -webkit-animation-duration: 500ms;
           animation-duration: 500ms;
 }
 
-.DishAuxDivAux1:hover .DishAuxTitleAux {
+.dishauxdivaux1:hover .dishauxtitleaux {
   -webkit-animation-name: shortertitles;
           animation-name: shortertitles;
   -webkit-animation-duration: 200ms;
@@ -2220,7 +2232,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.DishAuxDivAux1:hover .DishAuxDescriptionAux {
+.dishauxdivaux1:hover .dishauxdescriptionaux {
   -webkit-animation-name: shortertitles;
           animation-name: shortertitles;
   -webkit-animation-duration: 200ms;
@@ -2231,7 +2243,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.DishAuxDivAux2 {
+.dishauxdivaux2 {
   top: 26%;
   position: absolute;
   width: 95%;
@@ -2242,19 +2254,19 @@ a {
   opacity: 0;
 }
 
-.DishAuxDivAux2:hover > .CheckShape {
+.dishauxdivaux2:hover > .checkshape {
   width: 60px;
   background-color: #99e2d0;
 }
 
-.DishAuxDivAux2:hover .fa-check-circle {
+.dishauxdivaux2:hover .fa-check-circle {
   -webkit-animation-name: rotation;
           animation-name: rotation;
   -webkit-animation-duration: 500ms;
           animation-duration: 500ms;
 }
 
-.DishAuxDivAux2:hover .DishAuxTitleAux {
+.dishauxdivaux2:hover .dishauxtitleaux {
   -webkit-animation-name: shortertitles;
           animation-name: shortertitles;
   -webkit-animation-duration: 200ms;
@@ -2265,7 +2277,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.DishAuxDivAux2:hover .DishAuxDescriptionAux {
+.dishauxdivaux2:hover .dishauxdescriptionaux {
   -webkit-animation-name: shortertitles;
           animation-name: shortertitles;
   -webkit-animation-duration: 200ms;
@@ -2276,7 +2288,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.DishAuxDivAux3 {
+.dishauxdivaux3 {
   bottom: 26%;
   position: absolute;
   width: 95%;
@@ -2287,19 +2299,19 @@ a {
   opacity: 0;
 }
 
-.DishAuxDivAux3:hover > .CheckShape {
+.dishauxdivaux3:hover > .checkshape {
   width: 60px;
   background-color: #99e2d0;
 }
 
-.DishAuxDivAux3:hover .fa-check-circle {
+.dishauxdivaux3:hover .fa-check-circle {
   -webkit-animation-name: rotation;
           animation-name: rotation;
   -webkit-animation-duration: 500ms;
           animation-duration: 500ms;
 }
 
-.DishAuxDivAux3:hover .DishAuxTitleAux {
+.dishauxdivaux3:hover .dishauxtitleaux {
   -webkit-animation-name: shortertitles;
           animation-name: shortertitles;
   -webkit-animation-duration: 200ms;
@@ -2310,7 +2322,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.DishAuxDivAux3:hover .DishAuxDescriptionAux {
+.dishauxdivaux3:hover .dishauxdescriptionaux {
   -webkit-animation-name: shortertitles;
           animation-name: shortertitles;
   -webkit-animation-duration: 200ms;
@@ -2321,7 +2333,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.DishAuxDivAux4 {
+.dishauxdivaux4 {
   bottom: 0;
   position: absolute;
   width: 95%;
@@ -2332,19 +2344,19 @@ a {
   opacity: 0;
 }
 
-.DishAuxDivAux4:hover > .CheckShape {
+.dishauxdivaux4:hover > .checkshape {
   width: 60px;
   background-color: #99e2d0;
 }
 
-.DishAuxDivAux4:hover .fa-check-circle {
+.dishauxdivaux4:hover .fa-check-circle {
   -webkit-animation-name: rotation;
           animation-name: rotation;
   -webkit-animation-duration: 500ms;
           animation-duration: 500ms;
 }
 
-.DishAuxDivAux4:hover .DishAuxTitleAux {
+.dishauxdivaux4:hover .dishauxtitleaux {
   -webkit-animation-name: shortertitles;
           animation-name: shortertitles;
   -webkit-animation-duration: 200ms;
@@ -2355,7 +2367,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.DishAuxDivAux4:hover .DishAuxDescriptionAux {
+.dishauxdivaux4:hover .dishauxdescriptionaux {
   -webkit-animation-name: shortertitles;
           animation-name: shortertitles;
   -webkit-animation-duration: 200ms;
@@ -2366,7 +2378,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.DishAuxTitleAux {
+.dishauxtitleaux {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -2388,7 +2400,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.DishAuxDescriptionAux {
+.dishauxdescriptionaux {
   padding-left: 15px;
   font-size: 0.9rem;
   display: inline-block;
@@ -2409,13 +2421,13 @@ a {
           animation-fill-mode: forwards;
 }
 
-.DishAuxPriceAux {
+.dishauxpriceaux {
   float: right;
   font-weight: 600;
   padding-right: 15px;
 }
 
-.CheckShape {
+.checkshape {
   float: right;
   height: 100%;
   width: 0px;
@@ -2446,7 +2458,7 @@ a {
   height: 100%;
 }
 
-.Entrees .DishDiv1 {
+.entrees .dishdiv1 {
   -webkit-animation-name: slide1;
           animation-name: slide1;
   -webkit-animation-delay: 500ms;
@@ -2459,7 +2471,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.Entrees .DishDiv2 {
+.entrees .dishdiv2 {
   -webkit-animation-name: slide2;
           animation-name: slide2;
   -webkit-animation-delay: 700ms;
@@ -2472,7 +2484,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.Entrees .DishDiv3 {
+.entrees .dishdiv3 {
   -webkit-animation-name: slide3;
           animation-name: slide3;
   -webkit-animation-delay: 900ms;
@@ -2485,7 +2497,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.Entrees .DishAuxDivAux1 {
+.entrees .dishauxdivaux1 {
   -webkit-animation-name: slideaux1;
           animation-name: slideaux1;
   -webkit-animation-delay: 300ms;
@@ -2498,7 +2510,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.Entrees .DishAuxDivAux2 {
+.entrees .dishauxdivaux2 {
   -webkit-animation-name: slideaux2;
           animation-name: slideaux2;
   -webkit-animation-delay: 500ms;
@@ -2511,7 +2523,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.Entrees .DishAuxDivAux3 {
+.entrees .dishauxdivaux3 {
   -webkit-animation-name: slideaux3;
           animation-name: slideaux3;
   -webkit-animation-delay: 700ms;
@@ -2524,7 +2536,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.Entrees .DishAuxDivAux4 {
+.entrees .dishauxdivaux4 {
   -webkit-animation-name: slideaux4;
           animation-name: slideaux4;
   -webkit-animation-delay: 900ms;
@@ -2537,7 +2549,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.Plats .DishDiv1 {
+.plats .dishdiv1 {
   -webkit-animation-name: slide1;
           animation-name: slide1;
   -webkit-animation-delay: 700ms;
@@ -2550,7 +2562,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.Plats .DishDiv2 {
+.plats .dishdiv2 {
   -webkit-animation-name: slide2;
           animation-name: slide2;
   -webkit-animation-delay: 900ms;
@@ -2563,7 +2575,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.Plats .DishDiv3 {
+.plats .dishdiv3 {
   -webkit-animation-name: slide3;
           animation-name: slide3;
   -webkit-animation-delay: 1100ms;
@@ -2576,7 +2588,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.Desserts .DishDiv1 {
+.desserts .dishdiv1 {
   -webkit-animation-name: slide1;
           animation-name: slide1;
   -webkit-animation-delay: 900ms;
@@ -2589,7 +2601,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.Desserts .DishDiv2 {
+.desserts .dishdiv2 {
   -webkit-animation-name: slide2;
           animation-name: slide2;
   -webkit-animation-delay: 1100ms;
@@ -2602,7 +2614,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.Desserts .DishDiv3 {
+.desserts .dishdiv3 {
   -webkit-animation-name: slide3;
           animation-name: slide3;
   -webkit-animation-delay: 1300ms;
@@ -2615,7 +2627,7 @@ a {
           animation-fill-mode: forwards;
 }
 
-.Commander {
+.commander {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2626,14 +2638,14 @@ a {
 }
 
 @media (min-width: 760px) {
-  .Commander {
+  .commander {
     width: 50%;
     margin: 0 auto;
     padding-top: 20px;
   }
 }
 
-.CommanderBouton {
+.commanderbouton {
   color: white;
   border: none;
   padding: 15px 0;
@@ -2646,7 +2658,7 @@ a {
   cursor: pointer;
 }
 
-.CommanderBouton:hover {
+.commanderbouton:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), to(#a16be0));
   background: linear-gradient(180deg, #ff93e1 0%, #a16be0 100%);
   -webkit-box-shadow: 0px 1px 10px 1px #b3b3b3;

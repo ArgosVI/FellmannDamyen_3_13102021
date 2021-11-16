@@ -1,15 +1,15 @@
 @import "../utils/keyframes.scss";
 @import "../utils/variables.scss";
-@import "../Utils/mixin.scss";
+@import "../utils/mixin.scss";
 
-.Restaurants {
+.restaurants {
   display: flex;
   flex-direction: column;
   padding-top: 35px;
   padding-bottom: 35px;
   padding-left: 30px;
   background-color: $gris;
-  &TexteRestaurants {
+  &texterestaurants {
     font-size: 1.3rem;
     font-weight: 700;
     padding-bottom: 30px;
@@ -18,7 +18,7 @@
       margin: auto;
     }
   }
-  &Div {
+  &div {
     box-shadow: 0px 5px 20px 1px lightgray;
     width: 90%;
     height: 220px;
@@ -29,12 +29,13 @@
     text-decoration: none;
     border: none;
     padding: 0;
+    cursor: pointer;
     @media (min-width: 760px) {
       width: 50%;
       margin: 10px auto;
     }
   }
-  &Image {
+  &image {
     position: absolute;
     top: 0;
     left: 0;
@@ -44,7 +45,7 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
   }
-  &Nouveau {
+  &nouveau {
     font-weight: 700;
     color: #008766;
     position: absolute;
@@ -55,21 +56,23 @@
     border-style: solid;
     border-color: $terciaire;
   }
-  .Nouveau3,
-  .Nouveau4 {
+  .nouveau3,
+  .nouveau4 {
     visibility: hidden;
   }
-  &GroupeTextes {
+  &groupetextes {
     width: 50%;
     padding-top: 10px;
     padding-left: 10px;
     text-align: left;
     position: absolute;
     bottom: 15px;
+    left: 0;
   }
-  &Nom {
+  &nom {
     font-size: 1.1rem;
     font-weight: 700;
+    display: block;
   }
   .fas {
     font-size: 1.5rem;

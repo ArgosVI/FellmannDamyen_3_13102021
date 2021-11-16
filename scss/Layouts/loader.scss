@@ -1,4 +1,4 @@
-.Loader {
+.loader {
   display: flex;
   justify-content: center;
   vertical-align: middle;
@@ -7,7 +7,7 @@
   position: fixed;
   animation: loaderfadeout 3s, loaderdisapear 3s;
   animation-fill-mode: forwards;
-  &Img {
+  &img {
     width: 50%;
     object-fit: contain;
     filter: invert(100%);
@@ -17,7 +17,7 @@
   }
 }
 
-.BodyDiv {
+.bodydiv {
   animation-duration: 3s;
   animation-name: body;
 }

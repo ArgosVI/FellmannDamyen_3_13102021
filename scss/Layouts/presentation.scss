@@ -1,42 +1,42 @@
 @import "../utils/keyframes.scss";
 @import "../utils/variables.scss";
-@import "../Utils/mixin.scss";
+@import "../utils/mixin.scss";
 
-.Emplacement {
+.emplacement {
   height: 50px;
   background-color: #eaeaea;
   text-align: center;
   color: #484848;
-  @include FlexAlign();
+  @include flexalign();
   .fa-map-marker-alt {
     font-size: 20px;
     padding-right: 20px;
   }
-  .EmplacementTexte {
+  .emplacementtexte {
     font-weight: 700;
   }
 }
 
-.Presentation {
+.presentation {
   padding-top: 40px;
   padding-bottom: 100px;
-  @include FlexAlign();
+  @include flexalign();
   flex-direction: column;
   text-align: center;
   background-color: $gris;
-  &TexteUn {
+  &texteun {
     font-weight: 900;
     font-size: 1.4rem;
     width: 70%;
   }
-  &TexteDeux {
+  &textedeux {
     padding-top: 10px;
     padding-bottom: 20px;
     font-weight: 300;
     width: 90%;
   }
-  &Bouton {
-    @include Bouton;
+  &bouton {
+    @include bouton;
     &:hover {
       background: linear-gradient(
         180deg,
